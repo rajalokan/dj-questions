@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        {% for question in questions %}
+            <table>
+                <tr>
+                    <td>Question</td>
+                    <td>{{ question.question }}</td>
+                </tr>
+                <tr>
+                    <td>Answer A</td>
+                    <td>{{ question.answer_a }}</td>
+                </tr>
+                <tr>
+                    <td>Answer B</td>
+                    <td>{{ question.answer_b }}</td>
+                </tr>
+                <tr>
+                    <td>Answer C</td>
+                    <td>{{ question.answer_c }}</td>
+                </tr>
+                <tr>
+                    <td>Marks</td>
+                    <td>{{ question.marks }}</td>
+                </tr>
+                <tr>
+                    <td>Correct Answer</td>
+                    <td>{{ question.correct_answer }}</td>
+                </tr>
+            </table>
+            <br>
+        {% endfor %}
+    </body>
+</html>
